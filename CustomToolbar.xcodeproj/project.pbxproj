@@ -18,7 +18,6 @@
 		BD3FE59D1757A50F009AE4FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3FE59C1757A50F009AE4FF /* Default-568h@2x.png */; };
 		BD3FE5A01757A50F009AE4FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3FE59F1757A50F009AE4FF /* ViewController.m */; };
 		BD3FE5A31757A50F009AE4FF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3FE5A11757A50F009AE4FF /* ViewController_iPhone.xib */; };
-		BD3FE5A61757A50F009AE4FF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3FE5A41757A50F009AE4FF /* ViewController_iPad.xib */; };
 		BD3FE5AF1757A52D009AE4FF /* Toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3FE5AC1757A52D009AE4FF /* Toolbar@2x.png */; };
 		BD3FE5B01757A52D009AE4FF /* StretchButton-Highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3FE5AD1757A52D009AE4FF /* StretchButton-Highlighted@2x.png */; };
 		BD3FE5B11757A52D009AE4FF /* StretchButtonTester@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3FE5AE1757A52D009AE4FF /* StretchButtonTester@2x.png */; };
@@ -43,7 +42,6 @@
 		BD3FE59E1757A50F009AE4FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BD3FE59F1757A50F009AE4FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BD3FE5A21757A50F009AE4FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		BD3FE5A51757A50F009AE4FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		BD3FE5AC1757A52D009AE4FF /* Toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toolbar@2x.png"; sourceTree = "<group>"; };
 		BD3FE5AD1757A52D009AE4FF /* StretchButton-Highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StretchButton-Highlighted@2x.png"; sourceTree = "<group>"; };
 		BD3FE5AE1757A52D009AE4FF /* StretchButtonTester@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StretchButtonTester@2x.png"; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				BD3FE59E1757A50F009AE4FF /* ViewController.h */,
 				BD3FE59F1757A50F009AE4FF /* ViewController.m */,
 				BD3FE5A11757A50F009AE4FF /* ViewController_iPhone.xib */,
-				BD3FE5A41757A50F009AE4FF /* ViewController_iPad.xib */,
 				BD3FE5AC1757A52D009AE4FF /* Toolbar@2x.png */,
 				BD3FE5AD1757A52D009AE4FF /* StretchButton-Highlighted@2x.png */,
 				BD3FE5B51757B88D009AE4FF /* StretchButton@2x.png */,
@@ -183,7 +180,6 @@
 				BD3FE59B1757A50F009AE4FF /* Default@2x.png in Resources */,
 				BD3FE59D1757A50F009AE4FF /* Default-568h@2x.png in Resources */,
 				BD3FE5A31757A50F009AE4FF /* ViewController_iPhone.xib in Resources */,
-				BD3FE5A61757A50F009AE4FF /* ViewController_iPad.xib in Resources */,
 				BD3FE5AF1757A52D009AE4FF /* Toolbar@2x.png in Resources */,
 				BD3FE5B01757A52D009AE4FF /* StretchButton-Highlighted@2x.png in Resources */,
 				BD3FE5B11757A52D009AE4FF /* StretchButtonTester@2x.png in Resources */,
@@ -224,14 +220,6 @@
 			name = ViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		BD3FE5A41757A50F009AE4FF /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD3FE5A51757A50F009AE4FF /* en */,
-			);
-			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -247,7 +235,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -263,7 +250,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -279,7 +266,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -288,7 +274,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -300,6 +286,7 @@
 				GCC_PREFIX_HEADER = "CustomToolbar/CustomToolbar-Prefix.pch";
 				INFOPLIST_FILE = "CustomToolbar/CustomToolbar-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -311,6 +298,7 @@
 				GCC_PREFIX_HEADER = "CustomToolbar/CustomToolbar-Prefix.pch";
 				INFOPLIST_FILE = "CustomToolbar/CustomToolbar-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -334,6 +322,7 @@
 				BD3FE5AB1757A50F009AE4FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
