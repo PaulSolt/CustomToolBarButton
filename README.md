@@ -1,7 +1,7 @@
 CustomToolBarButton
 ===================
 
-Create custom UIBarButtonItem skins using a UIButton as a custom view.
+Create custom UIBarButtonItem and UIToolbar image skins with custom views.
 
 ![Stretchable Toolbar Buttons](https://raw.github.com/PaulSolt/CustomToolBarButton/master/iPhoneButtons.jpg)
 
