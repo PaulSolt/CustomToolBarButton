@@ -38,11 +38,10 @@
     
     // Customize the toolbar for portrait (lanscape needs a stretchable image, or another asset
     
-    UIImage *toolbarImage = [UIImage imageNamed:@"toolbar.png"];
-//    UIImage *toolbarImage = [[UIImage imageNamed:@"toolbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+//    UIImage *toolbarImage = [UIImage imageNamed:@"toolbar.png"];
+    UIImage *toolbarImage = [[UIImage imageNamed:@"toolbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
     [self.toolbar setBackgroundImage:toolbarImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
-    
-    [self.toolbar setBackgroundImage:toolbarImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsLandscapePhone];
+//    [self.toolbar setBackgroundImage:toolbarImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsLandscapePhone];
 }
 
 - (void)didReceiveMemoryWarning
