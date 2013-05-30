@@ -23,9 +23,12 @@
     
     // Customize uiButtons
     
-//    UIImage *buttonNormal = [[UIImage imageNamed:@"StretchButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
-    UIImage *buttonNormal = [[UIImage imageNamed:@"StretchButtonTester.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+    UIImage *buttonNormal = [[UIImage imageNamed:@"StretchButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
 
+    // Test image with the crosshair to show stretch
+//    UIImage *buttonNormal = [[UIImage imageNamed:@"StretchButtonTester.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+
+    
 //    UIImage *buttonHighlighted = [UIImage imageNamed:@"StretchButton-Highlighted.png"];
     UIImage *buttonHighlighted = [[UIImage imageNamed:@"StretchButton-Highlighted.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
     
