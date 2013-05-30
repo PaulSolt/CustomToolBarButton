@@ -5,7 +5,7 @@ Style your app with custom toolbar buttons. Using this sample project and Helper
 
 You can see a bigger difference with a button "highlight" that feels more like a physical button.
 
-Use Helper.h to style a button after you set an IBOutlet from your UI to your code. It'll preserver any IBAction that you've set.
+Use Helper.h to style a button after you set an IBOutlet from your UI to your code. It'll copy your IBAction that you've set in Xcode's interface builder.
 
 ![Stretchable Toolbar Buttons](https://raw.github.com/PaulSolt/CustomToolBarButton/master/ButtonClicks.gif)
 
