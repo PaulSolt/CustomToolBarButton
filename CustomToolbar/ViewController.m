@@ -42,8 +42,9 @@
     
     
     // Customize the toolbar for portrait (lanscape needs a stretchable image, or another asset)
+    // Toolbars are 44x44 points (88x640 pixels in portrait), you could use a 88x88 pixel image
     
-    UIImage *toolbarImage = [[UIImage imageNamed:@"toolbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+    UIImage *toolbarImage = [[UIImage imageNamed:@"toolbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(22, 22, 22, 22) resizingMode:UIImageResizingModeStretch];
     [self.toolbar setBackgroundImage:toolbarImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
 
     // Uncomment and set a custom landscape toolbar graphic
