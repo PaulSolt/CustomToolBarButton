@@ -28,26 +28,27 @@
     //     15 is half of 30, so that the middle pixel row/colum will be used when stretching vertically
     //     or horizontally
     
-    UIImage *buttonNormal = [[UIImage imageNamed:@"StretchButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+    UIImage *normalButtonImage = [[UIImage imageNamed:@"StretchButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
 
-    // Uncommment and test the image with the crosshair to show stretch
-//    buttonNormal = [[UIImage imageNamed:@"StretchButtonTester.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+    // TRYIT: Uncommment and test the image with the crosshair to show stretch
+//    normalButtonImage = [[UIImage imageNamed:@"StretchButtonTester.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
 
-    UIImage *buttonHighlighted = [[UIImage imageNamed:@"StretchButton-Highlighted.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
+    UIImage *highlightedButtonImage = [[UIImage imageNamed:@"StretchButton-Highlighted.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
     
-    [Helper customizeBarButton:self.leftButton image:buttonNormal highlightedImage:buttonHighlighted];
+    [Helper customizeBarButton:self.leftButton image:normalButtonImage highlightedImage:highlightedButtonImage];
     
-    // Uncomment to stylize both buttons
+    // TRYIT: Uncomment to stylize the right button
 //    [Helper customizeBarButton:self.rightButton image:buttonNormal highlightedImage:buttonHighlighted];
     
     
     // Customize the toolbar for portrait (lanscape needs a stretchable image, or another asset)
     // Toolbars are 44x44 points (88x640 pixels in portrait), you could use a 88x88 pixel image
+    //  use 44/2 == 22 for the insets
     
     UIImage *toolbarImage = [[UIImage imageNamed:@"toolbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(22, 22, 22, 22) resizingMode:UIImageResizingModeStretch];
     [self.toolbar setBackgroundImage:toolbarImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
 
-    // Uncomment and set a custom landscape toolbar graphic
+    // TRYIT: Uncomment and set a custom landscape toolbar graphic
     //    [self.toolbar setBackgroundImage:toolbarImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsLandscapePhone];
 }
 
