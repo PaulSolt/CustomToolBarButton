@@ -11,10 +11,14 @@ Use Helper.h to style a button after you set an IBOutlet from your UI to your co
 
 Code
 ----
-    UIImage *buttonNormal = [[UIImage imageNamed:@"StretchButton.png"] 
+    UIImage *normalButtonImage = [[UIImage imageNamed:@"StretchButton.png"] 
         resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) 
         resizingMode:UIImageResizingModeStretch];
-    [Helper customizeBarButton:self.leftButton image:buttonNormal highlightedImage:buttonHighlighted];
+    UIImage *highlightedButtonImage = [[UIImage imageNamed:@"StretchButton-Highlighted.png"] 
+        resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) 
+        resizingMode:UIImageResizingModeStretch];
+    [Helper customizeBarButton:myButton image:normalButtonImage highlightedImage:highlightedButtonImage];
 
 * Use an inset that matches your image. I use 60x60 images for the toolbar button image (retina). A standard non-retina button is 30x30, and 15 is half of 30 for the insets.
-* Don't load the retina image, instead load the non-retina and iPhone will autoscale down for you.
+* Don't load the retina image, instead load the non-retina and iPhone will autoscale down for you. i.e. [UIImage imageNamed:@"StretchButton.png"]
+* The imageNamed function will automatically downsample a retina image "StretchButton@2x.png" if you only add the retina image to your Xcode project.
